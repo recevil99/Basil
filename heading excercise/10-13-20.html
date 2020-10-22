@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title> 10-13-20 </title>
+
+	<style type="text/css">
+div.test {
+
+	height:300px;
+	width:300px;
+	background-color: red;
+	animation-name: test;
+	animation-duration: 10s;
+
+}
+
+@keyframes test {
+	from{
+		background-color: red;
+		background-image:linear-gradient(black,orange,red);
+		filter: drop-shadow(0 0 30px blue)
+	}
+	to{
+		background-color: yellow;
+		background-image:linear-gradient(red,orange,black);
+		filter: drop-shadow(0 0 30px blue)
+	}
+}
+
+div.move {
+	height:100px;
+	width:100px;
+	background-color: red;
+	position:relative;
+	animation-name: example;
+	animation-duration: 10s;
+}
+	
+@keyframes example {
+	0% {
+		background-color: red;
+		background-image:linear-gradient(orange,purple,green);
+		filter: drop-shadow(0 0 30px blue)
+		left:0px;
+		top:0px;
+	}
+	25% {
+		background-color: yellow;
+		background-image:linear-gradient(yellow,blue,orange);
+		filter: drop-shadow(0 0 30px blue)
+		left:200px;
+		top:0px;
+	}
+	50% {
+		background-color: blue;
+		background-image:linear-gradient(black,red,blue);
+		filter: drop-shadow(0 0 30px blue)
+		left:200px;
+		top:200px;
+	}
+	75% {
+		background-color: green;
+		background-image:linear-gradient(purple,teal,red);
+		filter: drop-shadow(0 0 30px blue)
+		left:0px;
+		top:200px;
+	}
+	100% {
+		background-color: red;
+		background-image:linear-gradient(orange,purple,green);
+		filter: drop-shadow(0 0 30px blue)
+		left:0px;
+		top:0px;
+	}
+
+}
+	.centerdiv {
+		width:200px;
+		margin:auto;
+		margin-top:100px;
+		
+	}
+	.dot {
+		height:25px;
+		width :25px;
+		background-color:#bbb;
+		border-radius: 50%;
+		display: inline-block;
+		background-image:linear-gradient(orange,purple,green);
+		filter: drop-shadow(0 0 30px blue)
+
+		margin: auto;
+	}
+	.circle {
+		background :lightblue;
+		border-radius: 50%;
+		width: 400px;
+		height: 400px;
+		margin: auto;
+		background-image:linear-gradient(red,blue,green);
+		filter: drop-shadow(0 0 30px blue)
+
+	}
+
+
+	</style>	
+</head>
+
+<body>
+	<div class="test"></div>
+	<br/><br/><br/><br/>
+	<div class="move"></div>
+	<br>
+	<div class="centerdiv">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+</div>
+	<br><br><br>
+	<div class="circle"></div>
+
+
+</body>
+
+
+</html>
+
